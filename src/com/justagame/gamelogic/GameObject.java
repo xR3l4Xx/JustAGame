@@ -5,9 +5,9 @@ import java.awt.Rectangle;
 
 public class GameObject {
 	
-	public vec2 pos;
-	public vec2 vel;
-	public Rectangle collBox;
+	protected vec2 pos;
+	protected vec2 vel;
+	protected Rectangle collBox;
 	
 	public GameObject(){
 		
