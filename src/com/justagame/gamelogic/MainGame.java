@@ -7,6 +7,8 @@ import java.awt.image.BufferedImage;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import com.justagame.Input.KeyboardEvents;
+
 public class MainGame {
 	public static final int WIDTH = 720;
 	public static final int HEIGHT = 480;
@@ -40,6 +42,7 @@ public class MainGame {
 		
 		//ADD PANEL TO FRAME
 		frame.add(panel);
+		frame.addKeyListener(new KeyboardEvents());
 		
 		//GAME LOOP
 		prevTick = System.currentTimeMillis();
